@@ -1,4 +1,4 @@
-package main
+package course
 
 import "fmt"
 
@@ -11,7 +11,7 @@ type Course struct {
 }
 
 // Si una funcion tiene un receptor de tipo puntero hay que poner todas las funciones de tipo puntero (recomendado)
-func (c *Course) ChangePrice(price float64) {
+func (c *Course) changePrice(price float64) {
 	c.Price = price
 }
 
